@@ -6,39 +6,67 @@
     <title>calculator</title>
     <style>
         body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             margin: 0;
             height: 100vh;
             width: 100vw;
+        }
+
+        .container {
+
+        }
+
+        .calcGrid {
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px;
+            height: 500px;
+            width: 400px;
+        }
+
+        #buttons {
+            height: 50px;
+            width: 50px;
+        }
+
+        #display {
+            height: 100px;
+            width: 400px;
             background-color: aqua;
         }
+
     </style>
 </head>
 <body>
     <script src="script.js"></script>
     <div class="container">
+        <div id="display"></div>
+        <div class="calcGrid">
 
-        <button>+</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
+            <button id="buttons">+</button>
+            <button id="buttons">1</button>
+            <button id="buttons">2</button>
+            <button id="buttons">3</button>
 
-        <button>-</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
+            <button id="buttons">-</button>
+            <button id="buttons">4</button>
+            <button id="buttons">5</button>
+            <button id="buttons">6</button>
 
-        <button>*</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
+            <button id="buttons">*</button>
+            <button id="buttons">7</button>
+            <button id="buttons">8</button>
+            <button id="buttons">9</button>
 
-        <button>/</button>
-        <button>.</button>
-        <button>0</button>
-        <button>=</button>
+            <button id="buttons">/</button>
+            <button id="buttons">.</button>
+            <button id="buttons">0</button>
+            <button id="buttons">=</button>
 
-        <button>CL</button>
-
+        </div>
     </div>
+    
 </body>
 </html>
